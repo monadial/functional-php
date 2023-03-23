@@ -32,7 +32,7 @@ function group($collection, callable $callback)
 
         InvalidArgumentException::assertValidArrayKey($groupKey, __FUNCTION__);
 
-        if (is_float($groupKey)) {
+        if (\is_float($groupKey)) {
             $groupKey = (int) $groupKey;
         }
 

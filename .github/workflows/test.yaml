@@ -40,4 +40,4 @@ jobs:
               run: composer tests
 
             - name: Check coding style
-              run: composer coding-style
+              run: PHP_CS_FIXER_IGNORE_ENV=1 composer coding-style
